@@ -26,12 +26,12 @@ const Header = () => {
         <button
           onClick={() => setIsOpen(!isOpen)}
           className="lg:hidden focus:outline-none text-gray-800 dark:text-white"
-           aria-label="Toggle menu"
+          aria-label="Toggle menu"
         >
           {isOpen ? "✖" : "☰"}
         </button>
 
-       {/* 🔻 Navigation Links for Large Screens */}
+        {/* 🔻 Navigation Links for Large Screens */}
         <nav className="hidden lg:flex space-x-6 items-center">
           <a href="/" className="hover:text-indigo-600">Home</a>
           <a href="#apps" className="hover:text-indigo-600">Apps</a>
@@ -54,27 +54,27 @@ const Header = () => {
 
       {/* 🔻 Mobile Menu with Smooth Slide Animation */}
       <div
-  className={`fixed top-0 left-0 h-full w-64 bg-transform dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50
+        className={`fixed top-0 left-0 h-full w-64 bg-transform dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50
     ${isOpen ? "translate-x-0" : "-translate-x-full"}`}
->
-{/* <div className={`fixed top-16 left-0 h-[calc(100%-64px)] w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50
+      >
+        {/* <div className={`fixed top-16 left-0 h-[calc(100%-64px)] w-64 bg-white dark:bg-gray-800 shadow-lg transform transition-transform duration-300 ease-in-out z-50
 ${isOpen ? "translate-x-0" : "-translate-x-full"}`}> */}
 
-  <nav className="flex flex-col space-y-4 p-6 mt-16">
-    <a href="/" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Home</a>
-    <a href="#apps" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Apps</a>
-    <a href="#blog" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Blog</a>
-    <a href="#about" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>About</a>
-    <Link to="/privacy-policy" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>
-      Privacy Policy
-    </Link>
-    <a href="#contact" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Contact</a>
-  </nav>
-</div>
+        <nav className="flex flex-col space-y-4 p-6 mt-16">
+          <a href="/" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Home</a>
+          <a href="#apps" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Apps</a>
+          <a href="#blog" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Blog</a>
+          <a href="#about" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>About</a>
+          <Link to="/privacy-policy" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>
+            Privacy Policy
+          </Link>
+          <a href="#contact" className="hover:text-indigo-600" onClick={() => setIsOpen(false)}>Contact</a>
+        </nav>
+      </div>
 
 
 
- {/* <div
+      {/* <div
         className={`lg:hidden bg-white dark:bg-gray-800 overflow-hidden transition-all duration-500 ease-in-out ${
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}

@@ -15,12 +15,12 @@ const PrivacyPolicy = () => {
       <main className="max-w-4xl mx-auto p-8">
         <p className="mb-4 text-sm">Last updated: April 4, 2025</p>
         <p className="mb-4 text-sm">
-          Genius App Hub does not collect any personal information directly. However, 
-          we may use trusted third-party services like Google Analytics and advertising 
+          Genius App Hub does not collect any personal information directly. However,
+          we may use trusted third-party services like Google Analytics and advertising
           networks that may collect data according to their own policies.
         </p>
         <p className="mb-4 text-sm">
-          By using our services, you agree to this privacy policy. We may update this 
+          By using our services, you agree to this privacy policy. We may update this
           policy from time to time. For updates, please check this page regularly.
         </p>
         <p className="mb-4 text-sm">
