@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React, { useState } from "react";
+import BlogCard from "../components/BlogCard";
 
 export default function Home() {
   const [toastMessage, setToastMessage] = useState("");
@@ -121,8 +122,31 @@ export default function Home() {
         </div>
       </section>
 
+<section id="blog" className="py-16 px-6 max-w-7xl mx-auto">
+      <h2 className="text-3xl font-bold text-center mb-8 text-green-700">
+        🌿 Latest Blogs
+      </h2>
 
-      <section id="blog" class="py-16 bg-gray-100 dark:bg-gray-800 px-6">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <BlogCard
+          image="/images/cactus-home-decor.webp"
+          title="Cactus Plant for Home – Nature ka Stylish Touch"
+          desc="Indoor cactus plants are trending! Learn how to care for them and how they add positive vibes to your home decor."
+          link="/blog/cactus-plant-for-home"
+        />
+
+         <BlogCard
+          image="/images/offlineappimg.webp"
+          title="📱 Best Offline Apps 2025 – Bina Internet ke Must-Have Apps"
+          desc="Discover top offline apps 2025 jo bina internet ke bhi kaam karein. Perfect for travelers!"
+          link="/blog/offline-apps"
+        />
+
+        {/* Add more blogs below */}
+      </div>
+    </section>
+
+      {/* <section id="blog" class="py-16 bg-gray-100 dark:bg-gray-800 px-6">
         <div class="max-w-6xl mx-auto">
           <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Latest From the Blog</h2>
           <div class="grid md:grid-cols-2 gap-8">
@@ -150,7 +174,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id="about" class="py-16 px-6 max-w-4xl mx-auto text-center" data-aos="fade-up">
         <h2 class="text-3xl font-bold mb-6">About Genius App Hub</h2>
