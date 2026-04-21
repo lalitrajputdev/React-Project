@@ -246,7 +246,7 @@ export default function Home() {
               <div className="absolute top-0 left-8 right-8 h-px bg-gradient-to-r from-transparent via-orange-500/50 to-transparent" />
               <div className="flex items-center space-x-4 mb-6">
                 <div className="relative w-16 h-16 rounded-2xl overflow-hidden border border-white/10 group-hover:border-orange-500/40 transition-all shadow-xl flex-shrink-0">
-                  <img src="./images/15Aguestapplogo.jpg" alt="15 August Photo Editor for Android" className="w-full h-full object-cover" />
+                  <img src="./images/15Aguestapplogo.jpg" alt="15 August Editor for Android" className="w-full h-full object-cover" />
                 </div>
                 <div>
                   <span className="text-[10px] font-bold text-orange-400/80 uppercase tracking-widest bg-orange-500/10 border border-orange-500/20 px-2 py-0.5 rounded-full">Photo Editor</span>
