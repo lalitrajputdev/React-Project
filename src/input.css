@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===========================
+   BASE STYLES
+=========================== */
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    @apply antialiased;
+    background-color: #030712;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5 {
+    font-family: 'Outfit', sans-serif;
+  }
+}
+
+/* ===========================
+   COMPONENT CLASSES
+=========================== */
+@layer components {
+
+  /* Sticky Glass Header */
+  .glass {
+    background: rgba(3, 7, 18, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    box-shadow: 0 4px 40px rgba(0, 0, 0, 0.5);
+  }
+
+  /* Deep Space Hero BG */
+  .bg-saas-gradient {
+    background:
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124, 58, 237, 0.18), transparent),
+      radial-gradient(ellipse 50% 50% at 80% 80%, rgba(6, 182, 212, 0.08), transparent),
+      #030712;
+    position: relative;
+  }
+
+  /* Premium Dark Cards */
+  .premium-card {
+    position: relative;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow:
+      inset 0 1px 0 rgba(255, 255, 255, 0.04),
+      0 20px 60px rgba(0, 0, 0, 0.4);
+    transition: all 0.4s ease;
+  }
+  .premium-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(124, 58, 237, 0.3);
+    box-shadow:
+      0 0 60px -10px rgba(124, 58, 237, 0.2),
+      inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+
+  /* Animated Gradient Text */
+  .premium-gradient-text {
+    background: linear-gradient(135deg, #06b6d4 0%, #818cf8 40%, #a855f7 70%, #ec4899 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: gradient-x 5s ease infinite;
+  }
+
+  /* Section pill badge */
+  .section-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.375rem 1rem;
+    border-radius: 9999px;
+    background: rgba(124, 58, 237, 0.08);
+    border: 1px solid rgba(124, 58, 237, 0.25);
+    color: #c4b5fd;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+  }
+
+  /* Primary Button */
+  .btn-primary {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.875rem 2.5rem;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #4f46e5, #7c3aed);
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.4), inset 0 1px 0 rgba(255,255,255,0.15);
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+  }
+  .btn-primary::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+    transform: translateX(-200%);
+    transition: transform 0.7s ease;
+  }
+  .btn-primary:hover::before { transform: translateX(200%); }
+  .btn-primary:hover {
+    box-shadow: 0 0 50px rgba(124, 58, 237, 0.6), inset 0 1px 0 rgba(255,255,255,0.2);
+    transform: translateY(-2px);
+  }
+
+  /* Ghost / Secondary Button */
+  .btn-ghost {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    border-radius: 1rem;
+    padding: 0.875rem 2.5rem;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.04);
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  .btn-ghost:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    transform: translateY(-2px);
+  }
+
+  /* Play Store Button */
+  .btn-playstore {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: white;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #1e1b4b, #1e3a5f);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+    cursor: pointer;
+  }
+  .btn-playstore:hover {
+    background: linear-gradient(135deg, #2e1f7a, #164e7a);
+    box-shadow: 0 0 30px rgba(124, 58, 237, 0.3);
+    transform: translateY(-2px);
+  }
+}
+
+/* ===========================
+   KEYFRAME ANIMATIONS
+=========================== */
+@keyframes gradient-x {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px) scale(1); }
+  50%       { transform: translateY(-24px) scale(1.03); }
+}
+
+@keyframes particle-up {
+  0%   { opacity: 0; transform: translateY(50px) scale(0.8); }
+  25%  { opacity: 0.8; }
+  100% { opacity: 0; transform: translateY(-80px) scale(1.3); }
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to   { transform: rotate(360deg); }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translate(-50%, 20px); }
+  10%  { opacity: 1; transform: translate(-50%, 0); }
+  90%  { opacity: 1; transform: translate(-50%, 0); }
+  100% { opacity: 0; transform: translate(-50%, 20px); }
+}
+
+/* ===========================
+   UTILITY ANIMATIONS
+=========================== */
+@layer utilities {
+  .animate-gradient-x {
+    animation: gradient-x 5s ease infinite;
+    background-size: 200% auto;
+  }
+  .animate-float {
+    animation: float-slow 8s ease-in-out infinite;
+  }
+  .animate-particle {
+    animation: particle-up 5s ease-in-out infinite;
+  }
+  .animate-spin-slow {
+    animation: spin-slow 25s linear infinite;
+  }
+  .animate-marquee {
+    animation: marquee 22s linear infinite;
+  }
+}

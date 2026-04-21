@@ -1670,11 +1670,6 @@ h1, h2, h3, h4, h5 {
   --tw-gradient-stops: var(--tw-gradient-from), rgb(6 182 212 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
 }
 
-.via-emerald-500\/50{
-  --tw-gradient-to: rgb(16 185 129 / 0)  var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), rgb(16 185 129 / 0.5) var(--tw-gradient-via-position), var(--tw-gradient-to);
-}
-
 .via-green-500\/30{
   --tw-gradient-to: rgb(34 197 94 / 0)  var(--tw-gradient-to-position);
   --tw-gradient-stops: var(--tw-gradient-from), rgb(34 197 94 / 0.3) var(--tw-gradient-via-position), var(--tw-gradient-to);
@@ -2006,10 +2001,6 @@ h1, h2, h3, h4, h5 {
 .text-emerald-400{
   --tw-text-opacity: 1;
   color: rgb(52 211 153 / var(--tw-text-opacity, 1));
-}
-
-.text-emerald-400\/80{
-  color: rgb(52 211 153 / 0.8);
 }
 
 .text-gray-200{
@@ -2354,18 +2345,8 @@ h1, h2, h3, h4, h5 {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.group:hover .group-hover\:scale-110{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .group:hover .group-hover\:border-cyan-500\/40{
   border-color: rgb(6 182 212 / 0.4);
-}
-
-.group:hover .group-hover\:border-emerald-500\/40{
-  border-color: rgb(16 185 129 / 0.4);
 }
 
 .group:hover .group-hover\:border-orange-500\/40{

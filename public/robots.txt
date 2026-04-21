@@ -1,4 +1,4 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
 Allow: /
-Sitemap: https://hilarious-sable-geniusapphub.netlify.app/sitemap.xml
+
+Sitemap: https://geniusapphub.com/sitemap.xml
