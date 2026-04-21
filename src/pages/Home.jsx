@@ -148,13 +148,13 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row justify-center gap-4 mb-24" data-aos="fade-up" data-aos-delay="300">
-            <a href="#apps" className="btn-primary text-base rounded-2xl">
+            <Link to="/#apps" className="btn-primary text-base rounded-2xl">
               Explore Our Apps
               <svg className="w-5 h-5 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" /></svg>
-            </a>
-            <a href="#features" className="btn-ghost text-base rounded-2xl">
+            </Link>
+            <Link to="/#features" className="btn-ghost text-base rounded-2xl">
               Why Choose Us?
-            </a>
+            </Link>
           </div>
 
           {/* Stats Row */}
@@ -443,12 +443,12 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#apps" className="btn-primary rounded-2xl text-base">
+            <Link to="/#apps" className="btn-primary rounded-2xl text-base">
               Browse All Apps →
-            </a>
-            <a href="/#contact" className="btn-ghost rounded-2xl text-base">
+            </Link>
+            <Link to="/#contact" className="btn-ghost rounded-2xl text-base">
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </section>

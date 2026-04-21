@@ -62,21 +62,21 @@ export default function Footer() {
           <div className="space-y-5">
             <h4 className="text-white text-xs font-bold uppercase tracking-[0.2em]">Our Apps</h4>
             <ul className="space-y-3">
-              <li><a href="/#apps" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors font-medium flex items-center gap-2">
+              <li><Link to="/#apps" className="text-gray-500 hover:text-emerald-400 text-sm transition-colors font-medium flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-gray-700"></span>MoneyMate
-              </a></li>
-              <li><a href="/#apps" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
+              </Link></li>
+              <li><Link to="/#apps" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-gray-700"></span>15 August Editor
-              </a></li>
-              <li><a href="/#apps" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
+              </Link></li>
+              <li><Link to="/#apps" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-gray-700"></span>Pic Genius
-              </a></li>
-              <li><a href="/#apps" className="text-gray-500 hover:text-purple-400 text-sm transition-colors font-medium flex items-center gap-2">
+              </Link></li>
+              <li><Link to="/#apps" className="text-gray-500 hover:text-purple-400 text-sm transition-colors font-medium flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-gray-700"></span>More Coming Soon
-              </a></li>
-              <li><a href="/#features" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
+              </Link></li>
+              <li><Link to="/#features" className="text-gray-500 hover:text-cyan-400 text-sm transition-colors font-medium flex items-center gap-2">
                 <span className="w-1 h-1 rounded-full bg-gray-700"></span>All Features
-              </a></li>
+              </Link></li>
             </ul>
           </div>
 

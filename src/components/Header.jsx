@@ -70,7 +70,7 @@ const Header = () => {
         <div style={innerStyle}>
 
           {/* Logo */}
-          <a href="/" style={logoStyle}>
+          <Link to="/" style={logoStyle}>
             <GeniusLogo />
             <div style={{display:"flex",flexDirection:"column",lineHeight:1}}>
               <span style={{fontFamily:"Outfit,sans-serif",fontWeight:900,fontSize:"1.15rem",color:"white",whiteSpace:"nowrap"}}>
@@ -83,12 +83,12 @@ const Header = () => {
                 App Ecosystem
               </span>
             </div>
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav style={{display:"flex",alignItems:"center",gap:"0.25rem"}} className="desktop-nav">
             {navLinks.map(item => (
-              <a key={item.label} href={item.href} style={{
+              <Link key={item.label} to={item.href} style={{
                 padding:"0.5rem 1rem",
                 fontSize:"0.875rem",
                 fontWeight:500,
@@ -101,7 +101,7 @@ const Header = () => {
               onMouseLeave={e=>{e.currentTarget.style.color="#9ca3af";e.currentTarget.style.background="transparent";}}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
             <Link to="/privacy-policy" style={{
               padding:"0.5rem 1rem",fontSize:"0.875rem",fontWeight:500,color:"#9ca3af",textDecoration:"none",borderRadius:"0.75rem",transition:"all 0.2s",
@@ -177,13 +177,13 @@ const Header = () => {
           <span style={{fontFamily:"Outfit,sans-serif",fontWeight:900,color:"white",fontSize:"1rem"}}>Genius App Hub</span>
         </div>
         {navLinks.map(item => (
-          <a key={item.label} href={item.href} onClick={()=>setIsOpen(false)} style={{
+          <Link key={item.label} to={item.href} onClick={()=>setIsOpen(false)} style={{
             display:"flex",alignItems:"center",padding:"0.75rem 1rem",
             color:"#d1d5db",borderRadius:"0.75rem",fontWeight:500,textDecoration:"none",transition:"all 0.2s",
           }}
           onMouseEnter={e=>{e.currentTarget.style.color="white";e.currentTarget.style.background="rgba(255,255,255,0.05)";}}
           onMouseLeave={e=>{e.currentTarget.style.color="#d1d5db";e.currentTarget.style.background="transparent";}}
-          >{item.label}</a>
+          >{item.label}</Link>
         ))}
         <Link to="/privacy-policy" onClick={()=>setIsOpen(false)} style={{
           display:"flex",alignItems:"center",padding:"0.75rem 1rem",
