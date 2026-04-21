@@ -6,13 +6,14 @@ export default function ScrollToTop() {
 
   useEffect(() => {
     if (hash) {
-      const element = document.getElementById(hash.replace("#", ""));
-      if (element) {
-        // Delay slightly to ensure the component has rendered
-        setTimeout(() => {
-          element.scrollIntoView({ behavior: "smooth" });
-        }, 100);
-      }
+      // Small timeout to allow AOS and images to mount
+      const id = hash.replace("#", "");
+      setTimeout(() => {
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      }, 500); // 500ms allows layout to settle
     } else {
       window.scrollTo(0, 0);
     }
