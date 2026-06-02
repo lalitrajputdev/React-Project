@@ -229,7 +229,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col space-y-2 mt-auto">
                 <button
-                  onClick={() => window.open("https://play.google.com/store/apps/details?id=com.geniusapphub.moneymate", "_blank")}
+                  onClick={() => window.open("https://play.google.com/store/apps/details?id=com.geniusapphub.moneymateapp", "_blank")}
                   className="btn-playstore"
                   style={{ borderColor: "rgba(16,185,129,0.3)", boxShadow: "0 0 20px rgba(16,185,129,0.1)" }}
                 >
